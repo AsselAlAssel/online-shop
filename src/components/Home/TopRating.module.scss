@@ -1,0 +1,28 @@
+.top-rating {
+    padding: 20px;
+    text-align: center;
+    .top-rating-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: center;
+        >div {
+            width: 80%;
+            height: 500px;
+        }
+    }
+}
+
+// for the large screen
+@media (min-width: 768px) {
+    .top-rating {
+        .top-rating-items {
+            width: 70%;
+            margin: 70px auto;
+            justify-content: space-between;
+            >div {
+                width: 30%;
+            }
+        }
+    }
+}
