@@ -1,0 +1,25 @@
+.button {
+    text-align: center;
+    width: 12rem;
+    padding: 10px 1rem;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+}
