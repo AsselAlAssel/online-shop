@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 import Button from "../UI/Button";
 import classes from "./Home.module.scss";
-import people from "../Head/imgs/people.svg";
+import people from "../assets/imgs/people.svg";
 import TopRating from "./TopRating";
+
 const Home = (props) => {
   let topRating = props.products.filter((ele) => ele.rating.rate > 4.7);
-  
-  
+
   return (
     <div>
       {/* head img  */}
@@ -26,8 +26,12 @@ const Home = (props) => {
           <Button>LEARN MORE</Button>
         </NavLink>
       </div>
-<TopRating topRating={topRating}/>
-
+      <TopRating topRating={topRating} />
+      <div className={classes['btn-shop-all']}>
+        <NavLink to="/">
+        <Button>SHOP ALL</Button>
+        </NavLink>
+      </div>
     </div>
   );
 };
