@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./Nav.module.scss";
-import menu from "./imgs/menu.png";
-import logo from "./imgs/logo.png";
-import cart from "./imgs/cart.png";
+import menu from "../assets/imgs/menu.png" ;
+import logo from "../assets/imgs/logo.png";
+import cart from "../assets/imgs/cart.png";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
