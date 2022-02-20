@@ -1,0 +1,29 @@
+marquee {
+    font-size: 15px;
+    padding: 5px;
+    background-color: #ecfeb7;
+}
+
+.headImg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0052/5434/8864/files/MOBILE_BANNER_2.png?v=1609890334);
+    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat;
+}
+
+.learn-more {
+    background-color: #ecfeb7;
+    text-align: center;
+    padding: 2rem;
+    img {
+        width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .headImg {
+        background-image: url(https://cdn.shopify.com/s/files/1/0052/5434/8864/files/DESKTOP_BANNER_2.png?v=1609890333);
+    }
+}
