@@ -28,7 +28,7 @@ const Home = (props) => {
       </div>
       <TopRating topRating={topRating} />
       <div className={classes['btn-shop-all']}>
-        <NavLink to="/">
+        <NavLink to="/shop">
         <Button>SHOP ALL</Button>
         </NavLink>
       </div>
