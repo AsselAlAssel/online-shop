@@ -1,12 +1,17 @@
 .item {
     overflow: hidden;
     padding: 5px;
-    // border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
     img {
         width: 100%;
         height: 370px;
@@ -14,4 +19,12 @@
     p {
         font-size: 14px;
     }
+}
+
+.item:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
