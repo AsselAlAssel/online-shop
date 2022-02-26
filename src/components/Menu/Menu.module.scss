@@ -1,0 +1,34 @@
+.menu {
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    width: 250px;
+    top: 0px;
+    z-index: 99;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    margin-left: -250px;
+    img {
+        cursor: pointer;
+        margin: 20px 10px;
+    }
+    a {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        transition: inherit;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        -ms-transition: inherit;
+        -o-transition: inherit;
+    }
+    a:hover {
+        background-color: #ccc;
+    }
+}
