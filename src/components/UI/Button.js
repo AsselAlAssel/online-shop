@@ -1,7 +1,11 @@
 import React from 'react';
 import classes from "./Button.module.scss"
  const Button =(props)=>{
-     return <button className={classes.button}onClick={props.onclick}>{props.children}</button>
+     const clickHandler=()=>{
+         props.onClick(props.children);
+     }
+     let className=`${classes.button} ${props.className}`
+     return <button className={className} onClick={clickHandler} >{props.children}</button>
 
  }
  export default Button
