@@ -1,0 +1,28 @@
+.show-items-container {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+// for tablet
+@media (min-width :768px) {
+    .show-items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// for the larg screen
+@media (min-width :900px) {
+    .show-items-container {
+        padding: 20px 10%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width :1400px) {
+    .show-items-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,16 @@
+.categories {
+    padding: 3px;
+    border-bottom: 1px solid#ccc;
+    text-align: center;
+    .btn-categorie {
+        width: auto;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .categories {
+        text-align: left;
+        padding: 10px;
+    }
+}
