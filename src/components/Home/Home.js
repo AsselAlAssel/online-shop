@@ -3,6 +3,8 @@ import Button from "../UI/Button";
 import classes from "./Home.module.scss";
 import people from "../assets/imgs/people.svg";
 import TopRating from "./TopRating";
+// use the style from the Button component
+import classesBtn from '../UI/Button.module.scss';
 
 const Home = (props) => {
   let topRating = props.products.filter((ele) => ele.rating.rate > 4.7);
@@ -29,7 +31,7 @@ const Home = (props) => {
       <TopRating topRating={topRating} />
       <div className={classes['btn-shop-all']}>
         <NavLink to="/shop">
-        <Button>SHOP ALL</Button>
+        <button className={classesBtn['button']}>SHOP ALL</button>
         </NavLink>
       </div>
     </div>
