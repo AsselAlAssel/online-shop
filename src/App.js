@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import classes from "./App.module.scss";
 import CartContainer from "./components/Cart/CartContainer";
+import Element from "./components/Element/Element";
 import Footer from "./components/Footer/Footer";
 import Head from "./components/Head/Head";
 import Home from "./components/Home/Home";
@@ -13,30 +14,44 @@ const App = () => {
   const [products, setProducts] = useState([]);
   // fetch the data from fake api
   useEffect(() => {
-    setTimeout(() => {
-      fetch("https://fakestoreapi.com/products")
-        .then((res) => res.json())
-        .then((json) => setProducts(json));
-    }, 1000);
+    console.log(products);
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((json) => setProducts(json));
   }, []);
-
+  console.log(products);
   return (
-    <React.Fragment>
+    <>
       {products.length === 0 ? (
         <Loading />
       ) : (
-        <BrowserRouter>
-          <Head />
-          <MenuContainer/>
-          <CartContainer/>
-          <Routes>
-            <Route exact path="/" element={<Home products={products} />} />
-            <Route exact path="/shop" element={<Shop products={products} />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+        <React.Fragment>
+          <BrowserRouter>
+            <Head />
+            <MenuContainer />
+            <CartContainer />
+            <div className={classes.main}>
+              <Routes>
+                <React.Fragment>
+                  <Route
+                    exact
+                    path="/"
+                    element={<Home products={products} />}
+                  />
+                  <Route
+                    exact
+                    path="/shop"
+                    element={<Shop products={products} />}
+                  />
+                  <Route exact path="/element" element={<Element />} />
+                </React.Fragment>
+              </Routes>
+            </div>
+            <Footer />
+          </BrowserRouter>
+        </React.Fragment>
       )}
-    </React.Fragment>
+    </>
   );
 };
 export default App;
