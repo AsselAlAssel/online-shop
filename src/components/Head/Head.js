@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Head.module.scss";
+// import classes from "./Head.module.scss";
 import Nav from "./Nav";
 const Head = () => {
   return (
@@ -7,7 +7,7 @@ const Head = () => {
       {/* the navbar for the page */}
       <Nav />
       {/* the slider text */}
-      <marquee>CHECK OUT OUR OFFICIAL PEANUTS COLLABORATION!</marquee>
+      {/* <marquee>CHECK OUT OUR OFFICIAL PEANUTS COLLABORATION!</marquee> */}
     </div>
   );
 };
