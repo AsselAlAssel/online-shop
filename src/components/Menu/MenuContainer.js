@@ -11,9 +11,9 @@ const Menu = () => {
   return (
     <div className={`${classes.menu} show-menu-ssss`} id="menu-container">
       <img src={close} alt="close icon for close menu" onClick={showMenu} />
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/shop">Shop</NavLink>
-      <NavLink to="/">Login</NavLink>
+      <NavLink to="/" onClick={showMenu}>Home</NavLink>
+      <NavLink to="/shop" onClick={showMenu}>Shop</NavLink>
+      <NavLink to="/" onClick={showMenu}>Login</NavLink>
     </div>
   );
 };
