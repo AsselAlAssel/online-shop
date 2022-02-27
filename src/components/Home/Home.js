@@ -12,8 +12,7 @@ const Home = (props) => {
   return (
     <div>
       {/* head img  */}
-      <div className={classes.headImg}></div>
-
+      <NavLink to="/shop"><div className={classes.headImg}></div></NavLink>
       {/* learn more */}
       <div className={classes["learn-more"]}>
         <img src={people} alt="people" />
